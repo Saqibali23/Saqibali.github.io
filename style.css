@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +11,21 @@
 }
 
 body{
-    background: #0f0a0a;
+    background: linear-gradient(160deg, #0d2494 0%, #1a3fd4 40%, #1e4fe0 100%);
+    background-attachment: fixed;
     height: 100vh;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+    z-index: 0;
 }
 html{
     font-size: 62.5%;
@@ -31,7 +44,7 @@ html{
 }
 .sticky{
     border-bottom: 2px solid rgba(255,255,255,.1);
-    background: #0f0a0a;
+    background: #0a1a6e;
 }
 .logo{
     font-size: 2.9rem;
@@ -198,7 +211,7 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    background: #0f0a0a;
+    background: transparent;
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -238,7 +251,7 @@ section{
     height: 300%;
     width: 100%;
     background: linear-gradient(
-        #0f0a0a,#a48a69,#0f0a0a,#a48a69
+        #0a1a6e,#a48a69,#0a1a6e,#a48a69
     );
     z-index: -1;
     transition: .5s ease;
@@ -285,7 +298,7 @@ section{
     height: 300%;
     width: 100%;
     background: linear-gradient(
-        #0f0a0a,#a48a69,#0f0a0a,#a48a69
+        #0a1a6e,#a48a69,#0a1a6e,#a48a69
     );
     z-index: -1;
     transition: .5s ease;
@@ -582,7 +595,7 @@ section.start-animation .skill-box2{
 /* Projects Section */
 .projects {
     padding: 80px 50px;
-    background: #0f0a0a;
+    background: transparent;
     text-align: center;
 }
 
@@ -595,10 +608,11 @@ section.start-animation .skill-box2{
 }
 
 .project-card {
-    background: #fff;
+    background: rgba(255,255,255,0.08);
+    border: 0.2rem solid rgba(255,255,255,0.2);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -710,7 +724,7 @@ section.start-animation .btn{
 /* footer */
 
 footer{
-    background: #080707;
+    background: #060f40;
     padding: 2rem 9%;
     display: flex;
     justify-content: space-between;
@@ -761,7 +775,7 @@ footer i{
         top: 100%;
         width: 100%;
         padding: 1rem 3%;
-        background: #0f0a0a;
+        background: #0a1a6e;
         border-top: 1px solid rgba(255,255,255,.1);
         border-bottom: .2rem solid rgba(255,255,255,.1);
         display: none;
