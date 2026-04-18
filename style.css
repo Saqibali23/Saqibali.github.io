@@ -147,36 +147,29 @@ footer i{ display: inline-flex; justify-content: center; align-items: center; pa
     .navbar.active{ display: block; }
     .navbar a{ display: block; margin: 3rem 0; font-size: 2rem; }
 
-    /* Home section mobile fix */
+    /* HOME MOBILE FIX */
     .home{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         text-align: center;
-        gap: 2rem;
-        min-height: 100vh;
+        min-height: auto;
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+        gap: 1.5rem;
     }
     .home img{
         width: 55vw;
         order: -1;
-        margin-top: 2rem;
     }
     .home .text-content{
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     .home .text-content h1{ font-size: 3.5rem; }
-    .text-animation{
-        width: auto;
-        text-align: center;
-    }
-    .btn-section{
-        width: auto;
-        justify-content: center;
-    }
+    .text-animation{ width: auto; }
+    .btn-section{ width: auto; justify-content: center; }
     .social-media{ text-align: center; }
     .about{ flex-direction: column; }
     .about img{ width: 20rem; height: 20rem; }
